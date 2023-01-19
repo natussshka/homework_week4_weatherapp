@@ -1,23 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="WeatherApp">
+      <div className="WeatherAppContainer">
+        <Container>
+          <Row>
+            <Form>
+              <Col>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter a city"
+                  className="col-9"
+                />
+              </Col>
+              <Col>
+                <Button variant="outline-primary" className="col-3">
+                  Search
+                </Button>{" "}
+              </Col>
+            </Form>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <h1>Vienna</h1>
+            <Col>
+              <ul>
+                <li>Thursday, 16:51</li>
+                <li>Clear Sky</li>
+              </ul>
+            </Col>
+
+            <Col>
+              <ul>
+                <li>
+                  Humidity: <span>78</span>%
+                </li>
+                <li>
+                  Wind: <span id>9</span>m/h
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+
+        <img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+          alt="Broken-clouds"
+          id="icon"
+        />
+        <div className="openSource">
+          <small>
+            <a
+              href="https://github.com/natussshka/pinkweather-app"
+              target="_blank"
+            >
+              Open source code
+            </a>{" "}
+            by Natalia Kubasi
+          </small>
+        </div>
+      </div>
     </div>
   );
 }
