@@ -59,7 +59,7 @@ function App() {
         <div className="openSource">
           <small>
             <a
-              href="https://github.com/natussshka/pinkweather-app"
+              href="https://github.com/natussshka/homework_week4_weatherapp"
               target="_blank"
             >
               Open source code
