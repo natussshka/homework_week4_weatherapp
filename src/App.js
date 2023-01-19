@@ -14,16 +14,10 @@ function App() {
           <Row>
             <Form>
               <Col>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter a city"
-                  className="col-9"
-                />
+                <Form.Control type="email" placeholder="Enter a city" />
               </Col>
               <Col>
-                <Button variant="outline-primary" className="col-3">
-                  Search
-                </Button>{" "}
+                <Button variant="outline-primary">Search</Button>{" "}
               </Col>
             </Form>
           </Row>
@@ -56,6 +50,9 @@ function App() {
           alt="Broken-clouds"
           id="icon"
         />
+        <h2>0</h2>
+        <p>°C</p>
+
         <div className="openSource">
           <small>
             <a
