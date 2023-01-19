@@ -58,6 +58,7 @@ function App() {
             <a
               href="https://github.com/natussshka/homework_week4_weatherapp"
               target="_blank"
+              rel="noreferrer"
             >
               Open source code
             </a>{" "}
